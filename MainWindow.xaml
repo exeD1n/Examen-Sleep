@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <Label>Login</Label>
+            <TextBox x:Name="tbLogin"></TextBox>
+            <Label>Paasword</Label>
+            <TextBox x:Name="tbPassword"></TextBox>
+            <Image x:Name="kapcha" MaxHeight="100px" MaxWidth="100px"></Image>
+            <TextBox x:Name="capha343"></TextBox>
+            <Button x:Name="refreshKapcha" Click="refreshKapcha_Click" Visibility="Visible">Поменять капчу</Button>
+            <Button x:Name="Login" Click="Login_Click" Visibility="Visible">Войти</Button>
+        </StackPanel>
+    </Grid>
+</Window>
